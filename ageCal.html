@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #b29292;
+      text-align: center;
+      
+      
+
+    }
+    .container {
+      margin-top: 50px;
+      background-color: #818197;
+      
+      border-radius: 20px;
+      padding: 40px;
+
+    }
+    input[type="date"] {
+      padding: 8px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #result {
+      margin-top: 20px;
+      font-size: 20px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Age Calculator</h2>
+    <label for="birthdate ">Enter your DOB:</label><br><br>
+    <input type="date" id="birthdate"><br><br>
+    <button onclick="calculateAge()">Calculate</button>
+    <div id="result"></div>
+  </div>
+
+  <script>
+    function calculateAge() {
+      var birthdate = new Date(document.getElementById('birthdate').value);
+      var today = new Date();
+      
+      var age = today.getFullYear() - birthdate.getFullYear();
+      var monthDiff = today.getMonth() - birthdate.getMonth();
+      
+      if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthdate.getDate())) {
+        age--;
+      }
+      
+      document.getElementById('result').innerHTML = "Your age is: " + age;
+    }
+  </script>
+</body>
+</html>
