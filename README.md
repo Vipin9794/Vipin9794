@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @Vipin
-- 👀 I’m interested in computer science
+- 👀 I’m interested in programming
 - 🌱 I’m currently pursuing b.tech 
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me ...
