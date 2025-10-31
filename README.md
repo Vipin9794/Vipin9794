@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @Vipin
 - 👀 I’m interested in programming
-- 🌱 I’m currently pursuing b.tech 
+- 🌱 I have recently complete b.tech 
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me ...
 
